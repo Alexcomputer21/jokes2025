@@ -120,6 +120,7 @@ play = option("Do you want to hear a joke?", ["yes", "no"])
 if play == "no":
     print("Okay suit yourself!")
 else:
+    # need to put a function and have the list "jokes" changed by either adding or removing more jokes
     while play == "yes":
         print("Great, lets play")
         joke = option("Choose a topic (robbers, tanks, pencils): ", jokes)
