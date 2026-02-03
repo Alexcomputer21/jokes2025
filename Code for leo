@@ -1,0 +1,172 @@
+# Knock Knock Joke Game
+# Purpose: Give the user a fun experience hearing knock-knock jokes
+
+jokes = ["robbers", "tanks", "pencils"]
+
+
+def get_valid_choice():
+    for _ in range(999999):
+        choice = input("Which joke would you like to hear? ").lower()
+        if choice in jokes:
+            return choice
+
+
+def robbers_joke():
+    input("Knock knock ")
+    input("Calder ")
+    print("Calder police — I've been robbed!")
+
+
+def tanks_joke():
+    input("Knock knock ")
+    input("Tank ")
+    print("You're welcome!")
+
+
+def pencils_joke():
+    input("Knock knock ")
+    input("Broken pencil ")
+    print("Nevermind, it's pointless!")
+
+
+def tell_joke(choice):
+    if choice == "robbers":
+        robbers_joke()
+    if choice == "tanks":
+        tanks_joke()
+    if choice == "pencils":
+        pencils_joke()
+
+
+def end_of_game():
+    rating = int(input("Please rate our game 1–10: "))
+    score = rating * 10
+    print(str(score) + "% satisfaction rate")
+
+    recommend = input("Would you recommend this game to a friend? (yes/no/maybe) ")
+
+    if recommend == "yes":
+        print("Thanks, we appreciate it!")
+    if recommend == "maybe":
+        print("Thanks, we appreciate it!")
+    if recommend == "no":
+        print("Sorry you didn’t enjoy it.")
+
+
+def main():
+    print("Welcome to the Knock Knock Joke Game!")
+    play = input("Do you want to hear a joke? (yes/no) ")
+
+    while play == "yes":
+        print("Great, let's play!")
+        print("Choose a topic:", jokes)
+
+        choice = get_valid_choice()
+        tell_joke(choice)
+
+        play = input("Do you want to hear another joke? (yes/no) ")
+
+    if play == "no":
+        end_of_game()
+
+    print("Goodbye!")
+
+
+main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Knock Knock Joke Game
+# Purpose: Give the user a fun experience hearing knock-knock jokes
+
+jokes = ["robbers", "tanks", "pencils"]
+
+print("Welcome to the Knock Knock Joke Game!")
+play = input("Do you want to hear a joke? (yes/no) ")
+
+while play == "yes":
+    print("Great, let's play!")
+    print("Choose a topic:", jokes)
+
+    # FOR LOOP TO VALIDATE USER CHOICE
+    for _ in range(999999):   # acts like "repeat until valid"
+        choice = input("Which joke would you like to hear? ").lower()
+        if choice in jokes:
+            break
+
+    # ROBBERS JOKE
+    if choice == "robbers":
+        input("Knock knock ")
+        input("Calder ")
+        print("Calder police — I've been robbed!")
+
+    # TANKS JOKE
+    if choice == "tanks":
+        input("Knock knock ")
+        input("Tank ")
+        print("You're welcome!")
+
+    # PENCILS JOKE
+    if choice == "pencils":
+        input("Knock knock ")
+        input("Broken pencil ")
+        print("Nevermind, it's pointless!")
+
+    play = input("Do you want to hear another joke? (yes/no) ")
+
+# END OF GAME
+if play == "no":
+    rating = int(input("Please rate our game 1–10: "))
+    score = rating * 10
+    print(str(score) + "% satisfaction rate")
+
+    recommend = input("Would you recommend this game to a friend? (yes/no/maybe) ")
+
+    if recommend == "yes":
+        print("Thanks, we appreciate it!")
+    if recommend == "maybe":
+        print("Thanks, we appreciate it!")
+    if recommend == "no":
+        print("Sorry you didn’t enjoy it.")
+
+print("Goodbye!")

@@ -41,13 +41,54 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # My Version
 # Abstraction and first function
 def option(prompt, valid_options):
-    choice = input(prompt).lower()
+    choice = input(prompt)
     while choice not in valid_options:
         print("Invalid choice. Try again.")
-        choice = input(prompt).lower()
+        # this is a added loop
+        print("These are your valid options:")
+        for item in valid_options:
+            print("-", item)
+        choice = input(prompt)
     return choice
 
 # Second function
