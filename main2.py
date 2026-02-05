@@ -74,6 +74,62 @@ else:
 
 
 
+# def 1st
+# then for or while 
+# then if/elif on one of the def
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# if play == "no":
+#     print("Okay suit yourself!")
+# else:
+#     # need to put a function and have the list "jokes" changed by either adding or removing more jokes
+#     while play == "yes":
+#         print("Great, lets play")
+#         joke = option("Choose a topic (robbers, tanks, pencils): ", jokes)
+#         tell_joke(joke)
+#         play = option("Do you want to hear another joke or are you finished?: ", ["yes","finished"])
+
+#         if play== "finished":
+# # The aftermath
+
+#             rate = int(input("Please rate our game 1-10!: "))
+#             final_score = int(rate * 10)
+#             print(str(final_score) + " percent satisfaction rate")
+    
+#             friend = option("Would you recommend this game to a friend?:", ["yes", "maybe", "no"])
+
+#             if friend in ["yes", "maybe"]:
+#                 print("Thanks, we appreciate it. ")
+#             else:
+#                 print("Sorry you did not enjoy it. ")
+        
+
+
+
+
+
+
+
+
+
+
+
 
 
 
