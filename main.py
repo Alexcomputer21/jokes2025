@@ -92,20 +92,25 @@ def option(prompt, valid_options):
     return choice
 
 # Second function
+# add a for loop or while loop
+# append or remove
 def tell_joke(joke):
     print("Knock Knock ")
     input()
     if joke == "robbers":
         input("Calder")
         print("Calder police - I've been robbed!")
+        
     
     elif joke == "tanks":
         input("Tank ")
         print("You are welcome! ")
         
+        
     elif joke == "pencils":
         input("Broken pencil ")
         print("Nevermind, it's pointless! ")
+        
 
 
 # Main program
@@ -125,9 +130,9 @@ else:
         print("Great, lets play")
         joke = option("Choose a topic (robbers, tanks, pencils): ", jokes)
         tell_joke(joke)
-        play = option("Do you want to hear another joke or are you finished?: ", ["yes","finished" ])
+        play = option("Do you want to hear another joke or not?: ", ["yes","no" ])
 
-        if play== "finished":
+        if play== "no":
 
 # The aftermath
 
