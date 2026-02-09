@@ -20,20 +20,26 @@ def option(prompt, valid_options):
 def tell_joke(joke):
     print("Knock Knock ")
     input()
+
+    chosen_joke = {
+        "robbers": ["Calder"],
+        "tanks": ["Tank "],
+        "pencils": ["Broken pencil "]
+    }
+
+    for line in chosen_joke[joke]:
+        input(line)
+
     if joke == "robbers":
-        input("Calder")
         print("Calder police - I've been robbed!")
-        jokes.remove("robbers")
-    
+        
     elif joke == "tanks":
-        input("Tank ")
         print("You are welcome! ")
-        jokes.remove("tanks")
         
     elif joke == "pencils":
-        input("Broken pencil ")
         print("Nevermind, it's pointless! ")
-        jokes.remove("pencils")
+    
+    jokes.remove(joke)
         
 
 
@@ -55,7 +61,6 @@ else:
         joke = option("Choose a topic (robbers, tanks, pencils): ", jokes)
         tell_joke(joke)
         play = option("Do you want to hear another joke or are you finished?: ", ["yes","finished"])
-
         if play== "finished":
 # The aftermath
 
@@ -77,6 +82,151 @@ else:
 # def 1st
 # then for or while 
 # then if/elif on one of the def
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# # My Version
+# # Abstraction and first function
+# def option(prompt, valid_options):
+#     choice = input(prompt)
+#     while choice not in valid_options:
+#         print("Invalid choice. Try again.")
+#         # this is a added loop
+#         print("These are your valid options:")
+#         for item in valid_options:
+#             print("-", item)
+#         choice = input(prompt)
+#     return choice
+
+# # Second function
+# # add a for loop or while loop
+# # append or remove
+# def tell_joke(joke):
+#     print("Knock Knock ")
+#     input()
+
+#     chosen_joke = {
+#         "robbers": ["Calder"],
+#         "tanks": ["Tank "],
+#         "pencils": ["Broken pencil "]
+#     }
+
+#     for line in chosen_joke[joke]:
+#         input(line)
+
+
+#     if joke == "robbers":
+#         input("Calder")
+#         print("Calder police - I've been robbed!")
+        
+    
+#     elif joke == "tanks":
+#         input("Tank ")
+#         print("You are welcome! ")
+        
+        
+#     elif joke == "pencils":
+#         input("Broken pencil ")
+#         print("Nevermind, it's pointless! ")
+    
+#     jokes.remove(joke)
+        
+
+
+# # Main program
+
+# # List of Jokes
+# jokes = ["robbers", "tanks", "pencils"]
+
+# # start of the programming
+# print("Welcome to the Knock Kncok Joke Game!")
+# play = option("Do you want to hear a joke?", ["yes", "no"])
+
+# if play == "no":
+#     print("Okay suit yourself!")
+# else:
+#     # need to put a function and have the list "jokes" changed by either adding or removing more jokes
+#     while play == "yes":
+#         print("Great, lets play")
+#         joke = option("Choose a topic (robbers, tanks, pencils): ", jokes)
+#         tell_joke(joke)
+#         play = option("Do you want to hear another joke or are you finished?: ", ["yes","finished"])
+#         if play== "finished":
+# # The aftermath
+
+#             rate = int(input("Please rate our game 1-10!: "))
+#             final_score = int(rate * 10)
+#             print(str(final_score) + " percent satisfaction rate")
+    
+#             friend = option("Would you recommend this game to a friend?:", ["yes", "maybe", "no"])
+
+#             if friend in ["yes", "maybe"]:
+#                 print("Thanks, we appreciate it. ")
+#             else:
+#                 print("Sorry you did not enjoy it. ")
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
